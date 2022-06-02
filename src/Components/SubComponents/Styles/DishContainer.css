@@ -1,0 +1,164 @@
+/* Dish Container Start */
+
+.dish-container {
+    margin: 1em 0;
+    width: 100%;
+    height: 30%;
+}
+
+.menu-card {
+    margin: 0 auto;
+    border-radius: 3vw;
+    width: 98%;
+    height: 100%;
+    background-color: snow;
+    box-shadow: 1px 1px 9px rgb(100, 100, 100);
+}
+
+.submenu-container {
+    padding: 9px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.submenu-container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2a2b3c;
+}
+
+.submenu-container .view-all p {
+    font-size: 16px;
+    font-weight: bold;
+    color: coral;
+}
+
+/* Dish Container End */
+
+
+/* Row Container Start */
+
+.row-container {
+    margin: 10px 0 30px 0;
+    padding: 10px 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: space-between;
+}
+
+.row-container::-webkit-scrollbar {
+    display: none;
+}
+
+.rowMenuCard {
+    margin: 0 6px;
+    border-radius: 10px;
+    padding: 6px;
+    width: 90px;
+    min-width: 90px;
+    height: 130px;
+    background-color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px gray;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rowMenuCard:hover,
+.rowMenuCard.active {
+    background-color: red;
+    color: snow;
+}
+
+.rowMenuCard .img-box {
+    border: 2px solid snow;
+    border-radius: 100%;
+    padding: 3px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: red;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.rowMenuCard:hover .img-box,
+.rowMenuCard.active .img-box {
+    background-color: snow;
+}
+
+.rowMenuCard .img-box img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.rowMenuCard:hover .img-box img,
+.rowMenuCard.active .img-box img {
+    object-fit: fill;
+    width: 120%;
+    height: 120%;
+}
+
+.rowMenuCard h3 {
+    font-size: 18px;
+    font-weight: bold;
+    /* color: #f8901c; */
+    color: back;
+    transition: 0.3s;
+}
+
+.rowMenuCard:hover h3,
+.rowMenuCard.active h3 {
+    color: snow;
+}
+
+.load-menu {
+    border-radius: 5px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    color: snow;
+    background: red;
+    transition: 0.3s;
+}
+
+.rowMenuCard:hover .load-menu,
+.rowMenuCard.active .load-menu {
+    background: snow;
+}
+
+.rowMenuCard .load-menu .MuiSvgIcon-root {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #faf9fb;
+    transition: 0.3s;
+}
+
+.rowMenuCard:hover .load-menu .MuiSvgIcon-root,
+.rowMenuCard.active .load-menu .MuiSvgIcon-root {
+    color: red;
+}
+
+/* Row Cotnainer End */
+
+
+.dish-item-container {
+    padding: 0 0 30px 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .row-container {
+        justify-content: space-between;
+    }
+}
